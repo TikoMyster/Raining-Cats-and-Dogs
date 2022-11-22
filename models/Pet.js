@@ -1,7 +1,7 @@
 const { Model, DataTypes, BOOLEAN } = require('sequelize');
 const sequelize = require('../config/connection');
 
-class Pet extends Model {}
+class Pet extends Model { }
 
 Pet.init(
     {
@@ -16,35 +16,37 @@ Pet.init(
             allowNull: false,
         },
         type: {
-          type: DataTypes.VARCHAR,
-          allowNull: false,
-        }, 
+            type: DataTypes.STRING,
+            allowNull: false,
+        },
         breed: {
-          type: DataTypes.VARCHAR,
-          allowNull: true,
-        }, 
+            type: DataTypes.STRING,
+            allowNull: true,
+        },
         owner_id: {
-          type: DataTypes.INTEGER,
-          references: {
-            model: 'user',
-            key: 'id',
-          },
+            type: DataTypes.INTEGER,
+            allowNull: false,
+            references: {
+                model: 'user',
+                key: 'id',
+            },
         },
         hotel_id: {
-          type: DataTypes.INTEGER,
-          references: {
-            model: 'hotel',
-            key: 'id',
-          },
+            type: DataTypes.INTEGER,
+            allowNull: false,
+            references: {
+                model: 'hotel',
+                key: 'id',
+            },
         },
-      },
-      {
+    },
+    {
         sequelize,
         timestamps: false,
         freezeTableName: true,
         underscored: true,
         modelName: 'pet',
-      }
+    }
 );
 
 module.exports = Pet;
