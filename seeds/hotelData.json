@@ -1,0 +1,145 @@
+[
+    {
+      "name": "Seattle Pet Club",
+      "address": "1234 12 Ave Seattle, WA",
+      "description": "Description...",
+      "contact_info": "206-555-1234",
+      "vacancy": false,
+      "cat": true,
+      "dog": true,
+      "rabbit": true,
+      "other": true
+    },
+    {
+      "name": "Rain City Pet Resort",
+      "address": "1234 22nd Ave South Seattle, WA",
+      "description": "Description...",
+      "contact_info": "206-555-1235",
+      "vacancy": true,
+      "cat": true,
+      "dog": true,
+      "rabbit": false,
+      "other": true
+    },
+    {
+      "name": "Pet Sitting Hotel",
+      "address": "124 Pike St Seattle, WA",
+      "description": "Description...",
+      "contact_info": "206-555-1236",
+      "vacancy": true,
+      "cat": true,
+      "dog": true,
+      "rabbit": true,
+      "other": true
+    },
+    {
+        "name": "Magnolia Pet Care",
+        "address": "12356 West C st Seattle, WA",
+        "description": "Description...",
+        "contact_info": "206-555-1237",
+        "vacancy": false,
+        "cat": true,
+        "dog": true,
+        "rabbit": false,
+        "other": true
+    },
+    {
+        "name": "Ballard Cat Club",
+        "address": "4434 Market St Seattle, WA",
+        "description": "Description...",
+        "contact_info": "206-555-1238",
+        "vacancy": false,
+        "cat": true,
+        "dog": false,
+        "rabbit": false,
+        "other": false
+    },
+    {
+        "name": "Petapalooza",
+        "address": "1734 East 22nd Ave Seattle, WA",
+        "description": "Description...",
+        "contact_info": "206-555-1239",
+        "vacancy": true,
+        "cat": true,
+        "dog": true,
+        "rabbit": true,
+        "other": true
+    },
+    {
+        "name": "Petlandia",
+        "address": "5678 Broadway Seattle, WA",
+        "description": "Description...",
+        "contact_info": "206-555-1231",
+        "vacancy": true,
+        "cat": true,
+        "dog": true,
+        "rabbit": false,
+        "other": false
+    },
+    {
+        "name": "Queen Anne Pet Spot",
+        "address": "9034 Queen Anne Ave Seattle, WA",
+        "description": "Description...",
+        "contact_info": "206-555-1232",
+        "vacancy": false,
+        "cat": true,
+        "dog": true,
+        "rabbit": false,
+        "other": true
+    },
+    {
+        "name": "Seattle Canine Club",
+        "address": "2934 1st Ave S. Seattle, WA",
+        "description": "Description...",
+        "contact_info": "206-555-1233",
+        "vacancy": false,
+        "cat": false,
+        "dog": true,
+        "rabbit": false,
+        "other": false
+    },
+    {
+        "name": "Emerald Pet Care",
+        "address": "9342 Pine St Seattle, WA",
+        "description": "Description...",
+        "contact_info": "206-555-1239",
+        "vacancy": true,
+        "cat": true,
+        "dog": true,
+        "rabbit": false,
+        "other": false
+    },
+    {
+        "name": "Downtown Pet Lounge",
+        "address": "2345 Western Ave Seattle, WA",
+        "description": "Description...",
+        "contact_info": "206-555-1222",
+        "vacancy": true,
+        "cat": true,
+        "dog": true,
+        "rabbit": false,
+        "other": false
+    },
+    {
+        "name": "Good Dog Daycare",
+        "address": "342 Greenwood Ave Seattle, WA",
+        "description": "Description...",
+        "contact_info": "206-555-1244",
+        "vacancy": false,
+        "cat": false,
+        "dog": true,
+        "rabbit": false,
+        "other": false
+    },
+    {
+        "name": "Metro Pets",
+        "address": "4434 Jackson Ave Seattle, WA",
+        "description": "Description...",
+        "contact_info": "206-555-1255",
+        "vacancy": true,
+        "cat": true,
+        "dog": true,
+        "rabbit": false,
+        "other": false
+    }
+  ]
