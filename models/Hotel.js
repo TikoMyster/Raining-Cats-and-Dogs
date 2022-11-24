@@ -1,7 +1,7 @@
 const { Model, DataTypes, BOOLEAN } = require('sequelize');
 const sequelize = require('../config/connection');
 
-class Hotel extends Model {}
+class Hotel extends Model { }
 
 Hotel.init(
     {
@@ -12,18 +12,18 @@ Hotel.init(
             autoIncrement: true,
         },
         name: {
-            type: DataTypes.VARCHAR,
+            type: DataTypes.STRING,
             allowNull: false,
         },
-        addres: {
-            type: DataTypes.VARCHAR,
+        address: {
+            type: DataTypes.TEXT,
             allowNull: false,
         },
         description: {
-            type: DataTypes.VARCHAR,
-          },
+            type: DataTypes.TEXT,
+        },
         contact_info: {
-            type: DataTypes.VARCHAR,
+            type: DataTypes.STRING,
             allowNull: true,
         },
         vacancy: {
@@ -32,7 +32,7 @@ Hotel.init(
         },
         cat: {
             type: DataTypes.BOOLEAN,
-        },  
+        },
         dog: {
             type: DataTypes.BOOLEAN,
         },
