@@ -5,14 +5,7 @@ const withAuth = require('../utils/auth');
 router.get('/', async (req, res) => {
     try {
     // Get all hotels and JOIN with user data
-        const hotelData = await Hotel.findAll({
-            // include: [
-            //   {
-            //     model: User,
-            //     attributes: ['name'],
-            //   },
-            // ],
-        });
+        const hotelData = await Hotel.findAll();
 
         // Serialize data so the template can read it
         const hotels = hotelData.map((hotel) => hotel.get({ plain: true }));
@@ -56,7 +49,7 @@ router.get('/profile', withAuth, async (req, res) => {
     // Find the logged in user based on the session ID
         const userData = await User.findByPk(req.session.user_id, {
             attributes: { exclude: ['password'] },
-            include: [{ model: Project }],
+           
         });
 
         const user = userData.get({ plain: true });
