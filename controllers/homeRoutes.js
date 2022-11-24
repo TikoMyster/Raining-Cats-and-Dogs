@@ -4,17 +4,23 @@ const withAuth = require('../utils/auth');
 
 router.get('/', async (req, res) => {
     try {
-    // Get all hotels and JOIN with user data
+        // Get all hotels and JOIN with user data
         const hotelData = await Hotel.findAll();
 
         // Serialize data so the template can read it
         const hotels = hotelData.map((hotel) => hotel.get({ plain: true }));
 
         // Pass serialized data and session flag into template
-        res.render('homepage', { 
-            hotels, 
-            login: req.isAuthenticated()
-        });
+        req.isAuthenticated()
+            ? res.render('homepage', {
+                hotels,
+                login: req.isAuthenticated(),
+                username: req.user.username
+            })
+            : res.render('homepage', {
+                hotels,
+                login: req.isAuthenticated()
+            });
 
     } catch (err) {
         res.status(500).json(err);
@@ -46,10 +52,10 @@ router.get('/hotel/:id', async (req, res) => {
 // Use withAuth middleware to prevent access to route
 router.get('/profile', withAuth, async (req, res) => {
     try {
-    // Find the logged in user based on the session ID
+        // Find the logged in user based on the session ID
         const userData = await User.findByPk(req.session.user_id, {
             attributes: { exclude: ['password'] },
-           
+
         });
 
         const user = userData.get({ plain: true });
