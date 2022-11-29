@@ -1,0 +1,15 @@
+  <div class="container-fluid">
+    <div class="row mt-5">
+      <div class="col d-flex flex-column align-items-center">
+        <h1 class="mb-5">{{hotel.name}}</h1>
+        <p>Address: {{hotel.address}}</p>
+        <p>Contact info: {{hotel.contact_info}}</p>
+        <p>Description: {{hotel.description}}</p>
+        {{#if hotel.vacancy}}
+        <a href="/api/hotel/{{hotel.id}}" class="text-white bg-primary p-2 rounded font-weight-bold mt-5">BOOK NOW</a>
+        {{else}}
+        <p>This hotel is currently full</p>
+        {{/if}}
+      </div>
+    </div>
+  </div>

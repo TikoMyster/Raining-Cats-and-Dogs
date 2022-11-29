@@ -1,0 +1,9 @@
+[
+    {
+        "name": "Dahuang",
+        "type": "Dog",
+        "breed": "Golden retriever",
+        "owner_id": 1,
+        "hotel_id": 1
+    }
+]
