@@ -9,7 +9,7 @@ router.use('/api', apiRoutes);
 router.use('/dashboard', dashboardRoutes);
 
 router.use((req,res)=>{
-    res.send(404).end();
+    res.send('<h1>404 NOT FOUND</h1>');
 });
 
 module.exports = router;

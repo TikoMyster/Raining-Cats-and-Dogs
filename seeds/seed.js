@@ -1,8 +1,9 @@
+/* eslint-disable no-undef */
 const sequelize = require('../config/connection');
 const { User, Pet, Hotel } = require('../models');
 
 const userData = require('./userData.json');
-// const petData = require('./petData.json');
+const petData = require('./petData.json');
 const hotelData = require('./hotelData.json');
 
 const seedDatabase = async () => {
@@ -10,6 +11,7 @@ const seedDatabase = async () => {
     //add a user to test the login functionality
     await User.bulkCreate(userData, { individualHooks: true });
     await Hotel.bulkCreate(hotelData);
+    await Pet.bulkCreate(petData);
     process.exit(0);
 };
 
