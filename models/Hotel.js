@@ -29,6 +29,10 @@ Hotel.init(
             type: DataTypes.BOOLEAN,
             allowNull: false,
         },
+        filename: {
+            type: DataTypes.STRING,
+            allowNull: false,
+        },
         cat: {
             type: DataTypes.BOOLEAN,
         },
