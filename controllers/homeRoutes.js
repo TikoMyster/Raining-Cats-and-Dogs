@@ -46,8 +46,8 @@ router.get('/login', (req, res) => {
     res.render('login');
 });
 
-router.get('/password', async (req, res) => {
-    res.render('password', { login: req.isAuthenticated(), username: req.user.username })
+router.get('/signup', async (req, res) => {
+    res.render('signup');
 });
 
 module.exports = router;
