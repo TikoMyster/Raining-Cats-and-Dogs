@@ -1,33 +1,20 @@
-
-<nav class="breadcrumb" aria-label="breadcrumbs">
-  <ul>
-    <li>
-      <a href="#">
-        <span class="icon is-small">
-          <i class="fa-solid fa-paw-simple"></i>
-        </span>
-        <span>Home</span>
-      </a>
-    </li>
-    <li>
-      <a href="#">
-        <span class="icon is-small">
-         <i class="fa-solid fa-horse"></i>
-        </span>
-        <span>My Pet</span>
-      </a>
-    </li>
-    <li>
-      <a href="#">
-        <span class="icon is-small">
-          <i class="fa-sharp fa-solid fa-dolphin"></i>
-        </span>
-        <span>Logout</span>
-      </a>
-    </li>
-  </ul>
-</nav>
+<div class="container-fluid  d-flex flex-column">
+    <div class="row d-flex justify-content-center">
+        <a href="/api/pet/" class="text-white bg-primary p-2 my-5 rounded font-weight-bold">+ Add a pet</a>
+    </div>
 
 
-<script src="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"></script>
-
+    {{#each petArr}}
+    <div class="row d-flex justify-content-center">
+        <div class="col-5 border my-2">
+            <h3>{{this.name}}</h3>
+            <p>Type: {{this.type}}</p>
+            <p>Breed: {{this.breed}}</p>
+            {{#if this.hotel_id}}
+            {{> pet-detail}}
+            {{/if}}
+        </div>
+    </div>
+    {{/each}}
+    
+</div>

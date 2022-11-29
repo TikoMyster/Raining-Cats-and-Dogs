@@ -1,4 +1,4 @@
-const { Model, DataTypes, BOOLEAN } = require('sequelize');
+const { Model, DataTypes } = require('sequelize');
 const sequelize = require('../config/connection');
 
 class Pet extends Model { }
@@ -21,7 +21,6 @@ Pet.init(
         },
         breed: {
             type: DataTypes.STRING,
-            allowNull: true,
         },
         owner_id: {
             type: DataTypes.INTEGER,
@@ -33,7 +32,6 @@ Pet.init(
         },
         hotel_id: {
             type: DataTypes.INTEGER,
-            allowNull: false,
             references: {
                 model: 'hotel',
                 key: 'id',

@@ -1,4 +1,4 @@
-const { Model, DataTypes, BOOLEAN } = require('sequelize');
+const { Model, DataTypes} = require('sequelize');
 const sequelize = require('../config/connection');
 
 class Hotel extends Model { }
@@ -24,7 +24,6 @@ Hotel.init(
         },
         contact_info: {
             type: DataTypes.STRING,
-            allowNull: true,
         },
         vacancy: {
             type: DataTypes.BOOLEAN,
