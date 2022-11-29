@@ -2,7 +2,6 @@ const router = require('express').Router();
 const { Hotel } = require('../models');
 const withAuth = require('../utils/auth');
 
-
 router.get('/', async (req, res) => {
     try {
         // Get all hotels and JOIN with user data
