@@ -4,6 +4,7 @@ const session = require('express-session');
 const exphbs = require('express-handlebars');
 const routes = require('./controllers');
 const passport = require('passport');
+const morgan = require('morgan');
 require('./utils/passport');
 
 const sequelize = require('./config/connection');
@@ -39,6 +40,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(express.static(path.join(__dirname, 'public')));
 
+app.use(morgan('dev'));
 app.use(passport.initialize());
 app.use(passport.session());
 app.use(routes);
