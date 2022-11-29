@@ -5,42 +5,37 @@
   <meta http-equiv='X-UA-Compatible' content='IE=edge' />
   <meta name='viewport' content='width=device-width, initial-scale=1.0' />
   <title>Raining Dogs And Cats</title>
-  <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css'
-    integrity='sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N' crossorigin='anonymous' />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
 </head>
 
-<body>
-  <div class='container-fluid'>
-    <div class='row'>
-      <nav class='navbar navbar-expand-sm navbar-light bg-light col'>
-        <div class='collapse navbar-collapse' id='navbarSupportedContent'>
-          <ul class='navbar-nav mr-auto'>
-            <li class='nav-item active'>
-              <a class='nav-link' href='/'>Home
-                <span class='sr-only'>(current)</span></a>
-            </li>
-            <li class='nav-item'>
-              <a class='nav-link' href='#'>Dashboard</a>
-            </li>
-            {{#if login}}
-            <li class='nav-item dropdown'>
-              <a class='nav-link dropdown-toggle' href='#' role='button' data-toggle='dropdown' aria-expanded='false'>
-                {{username}}
-              </a>
-              <div class='dropdown-menu'>
-                <a class='dropdown-item' href='/api/users/logout'>Logout</a>
-              </div>
-            </li>
-            {{else}}
-            <li class='nav-item'>
-              <a class='nav-link' href='/login'>Login</a>
-            </li>
-            {{/if}}
-          </ul>
-        </div>
-      </nav>
-    </div>
+<div class="field">
+  <label class="username-form">{{Username}}</label>
+  <div class="control has-icons-left has-icons-right">
+    <input class="input is-success" type="text" placeholder="Text input" value="bulma">
+    <span class="icon is-small is-left">
+      <i class="fas fa-user"></i>
+    </span>
   </div>
+</div>
+
+<div class="field">
+  <label class="email-form">{{Email}}</label>
+  <div class="control has-icons-left has-icons-right">
+    <input class="input is-danger" type="email" placeholder="Email input" value="hello@">
+    <span class="icon is-small is-left">
+      <i class="fas fa-envelope"></i>
+    </span>
+  </div>
+</div>
+
+<div class="field is-grouped">
+  <div class="control">
+    <button class="button is-link">Submit</button>
+  </div>
+  <div class="control">
+    <button class="button is-link is-light">Cancel</button>
+  </div>
+</div>
 
   {{{body}}}
 </body>
