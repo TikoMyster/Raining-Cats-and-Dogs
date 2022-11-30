@@ -1,103 +1,44 @@
-* {
-  box-sizing: border-box;
-}
-
-body,
-html {
-  height: 100%;
-  padding: 0;
-  margin: 0;
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-  color: #2893FE;
-
+/* ----------------overall page styling---------------- */
+:root {
+   --bg-hotel: #ffffffe8;
 }
 
 p {
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-  color: #065b83;
+  font-family: Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
 a {
+  font-weight: bold;
   text-decoration: none;
-  font-weight: bold;
-  color: black;
 }
 
-a:hover {
-  color: white;
-}
-
-/* button {
-  border: 0;
-  padding: 1%;
-  font-weight: bold;
-  transition: background-color .1s;
-  cursor: pointer;
-  border-radius: 5px;
-} */
-
-.wrapper {
-  width: 100%;
-  min-height: 100%;
-  max-width: 1200px;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-}
-
-header,
-.project:not(:last-child) {
-  border-bottom: 1px solid #ccc;
-}
-
-.no-button {
-  background: none;
-  border: none;
-  padding: 0;
-  cursor: pointer;
-  color: #1b89bc;
+a:hover{
+  color: red;
   text-decoration: none;
-  font-size: 100%;
 }
 
-.no-button:hover {
-  color: #065b83;
-  text-decoration: underline;
+img{
+  display: block;
 }
 
-.dollar-amount {
-  color: #056605;
-  font-weight: bold;
-  margin-left: -5px;
-}
 
-main {
-  flex: 1;
-  padding: 2%4%;
-}
-
-footer {
-  border-top: 1px solid #1ffcba;
-  display: flex;
-  justify-content: center;
-  padding: 1%;
-  font-size: 110%;
-}
-
-.card {
-  margin-bottom: 1em;
-  margin-top: 1em;
-}
-
-.rows {
-  display: flex;
-  flex-direction: column;
-}
-
-/* login page styling */
+/* ----------------login page styling---------------- */
 .monkey {
   position: absolute;
   top: 5rem;
   left: 5rem;
   width: 20%;
+}
+
+/* ----------------hotel page styling---------------- */
+.bg-hotel-card {
+  background-color: var(--bg-hotel);
+}
+
+.hotel-img {
+  width: 30%;
+}
+
+.hotel-img-large {
+  width: 50%;
 }
