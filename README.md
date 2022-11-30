@@ -9,6 +9,8 @@ Raining cats and Dogs is created to help pet owners find temporarily places for 
 
 What are the steps required to install your project? Provide a step-by-step description of how to get the development environment running.
 
+- Heroku
+
 ## Usage
 
 Provide instructions and examples for use. Include screenshots as needed.
