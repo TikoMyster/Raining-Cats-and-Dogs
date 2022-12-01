@@ -5,10 +5,18 @@
 ![Express.js](https://img.shields.io/badge/express.js-%23404d59.svg?style=for-the-badge&logo=express&logoColor=%2361DAFB)
 ![MySQL](https://img.shields.io/badge/mysql-%2300f.svg?style=for-the-badge&logo=mysql&logoColor=white)
 ![Sequelize](https://img.shields.io/badge/Sequelize-52B0E7?style=for-the-badge&logo=Sequelize&logoColor=white)
-![Mocha](https://img.shields.io/badge/-mocha-%238D6748?style=for-the-badge&logo=mocha&logoColor=white)
 ![Handlebars](https://img.shields.io/badge/Handlebars.js-f0772b?style=for-the-badge&logo=handlebarsdotjs&logoColor=black)
+![Mocha](https://img.shields.io/badge/-mocha-%238D6748?style=for-the-badge&logo=mocha&logoColor=white)
 
 
+![Chai](https://img.shields.io/badge/-Chai-orange.svg?)
+![Supertest](https://img.shields.io/badge/-Supertest-darkgreen.svg?)
+![Bcrypt](https://img.shields.io/badge/-Bcrypt-darkblue.svg)
+![Dotenv](https://img.shields.io/badge/-Dotenv-lightblue.svg)
+![Heroku](https://img.shields.io/badge/-Heroku-purple.svg)
+![Passport-Local](https://img.shields.io/badge/Passport-Local-green.svg)
+![badge](https://img.shields.io/github/languages/top/tikomyster/raining-cats-and-dogs)
+![MIT license](https://img.shields.io/badge/License-MIT-green.svg)
 
 ## Description
 
@@ -31,49 +39,46 @@ This application is a live site, deployed using Heroku at https://raining-cats-d
 - Save pet information
 - Choose/reserve places for pets to stay
 - Image icon changes depending where cursor is at
-- NodeJs
-- HTML & CSS
-- JavaScript
-- Express
-- Handlebars
 
+## Technologies Used
 
+- [Express](https://expressjs.com)
+- [Express-session](https://www.npmjs.com/package/express-session)
+- [Express-handlebars](https://www.npmjs.com/package/express-handlebars)
+- [Passport-Local](https://www.passportjs.org/packages/passport-local/)
+- [Bcrypt](https://www.npmjs.com/package/bcrypt)
+- [Sequelize](https://sequelize.org/docs/v6/)
+- [Mysql2](https://www.npmjs.com/package/mysql2)
+- [Dotenv](https://www.npmjs.com/package/dotenv)
+- [Heroku](https://www.heroku.com)
+- [Mocha](https://mochajs.org/)
+- [Chai](https://www.chaijs.com/)
+- [Supertest](https://www.npmjs.com/package/supertest)
+- [WebdriverIO](https://webdriver.io/)
 
-## How to Contribute
-
-If you created an application or package and would like other developers to contribute it, you can include guidelines for how to do so. The [Contributor Covenant](https://www.contributor-covenant.org/) is an industry standard, but you can always write your own if you'd prefer.
 
 ## Credits
 
-- Christopher Saechao [TikoMyster](https://github.com/TikoMyster)
-- Ruxin Qu [RuxinQu](https://github.com/RuxinQu)
-- Richard Nelson [Nelson92](https://github.com/nelson92)
-- Lely Huynh [Lely2011](https://github.com/lely2011)
+- [Christopher Saechao](https://github.com/TikoMyster)
+- [RuxinQu](https://github.com/RuxinQu)
+- [Richard Nelson](https://github.com/nelson92)
+- [Lely Huynh](https://github.com/lely2011)
 
 ## License
 
-MIT License
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+This project is under [MIT license](https://opensource.org/lsicenses/MIT)
+
+## Test
+- feature test for the login page is performed using [WebdriverIO](https://webdriver.io/):    
+Start the local server and run `npm run wdio`
+- server test for the dashboard page is performed using [Supertest](https://www.npmjs.com/package/supertest):      
+Run `npm run test`
+
+## How to Contribute
+
+ If you created an application or package and would like other developers to contribute it, you can include guidelines for how to do so. The [Contributor Covenant](https://www.contributor-covenant.org/) is an industry standard, but you can always write your own if you'd prefer.
 
 Copyright (c) 2022 Christopher Saechao, Ruxin Qu, Richard Nelson, Lely Huynh
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
 
 
 
