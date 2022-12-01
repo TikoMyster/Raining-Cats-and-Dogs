@@ -34,6 +34,10 @@ img {
   background-size: cover;
 }
 
+.main-title {
+  font-size: 2.5em;
+}
+
 /* ----------------login page styling---------------- */
 .monkey {
   width: 10%;
