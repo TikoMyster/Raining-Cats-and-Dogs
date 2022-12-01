@@ -4,11 +4,12 @@
   "description": "",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js",
     "seed": "node seeds/seed.js",
     "lint": "eslint .",
-    "lint:fix": "eslint --fix --ext .js,.jsx ."
+    "lint:fix": "eslint --fix --ext .js,.jsx .",
+    "test": "mocha __test__/server.test.js",
+    "ci": "start-server-and-test start http://localhost:8080 test"
   },
   "keywords": [],
   "author": "",
@@ -27,8 +28,12 @@
     "sequelize": "^6.3.5"
   },
   "devDependencies": {
+    "chai": "^4.3.7",
     "eslint": "^7.12.1",
     "eslint-config-prettier": "^6.15.0",
-    "prettier": "^2.1.2"
+    "mocha": "^10.1.0",
+    "prettier": "^2.1.2",
+    "start-server-and-test": "^1.14.0",
+    "supertest": "^6.3.1"
   }
 }
