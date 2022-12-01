@@ -4,7 +4,7 @@
   --bg-img: url("https://images.dog.ceo/breeds/sheepdog-shetland/n02105855_17258.jpg");
 }
 
-html{
+html {
   font-size: 18px;
 }
 
@@ -44,8 +44,9 @@ img {
 }
 
 /* ----------------hotel page styling---------------- */
-.bg-hotel-card {
-  background-color:#d9d9d9 ;
+.bg-hotel-card,
+.bg-pet-card {
+  background-color: #d9d9d9;
   filter: drop-shadow(5px 5px 4px #6d6d6d);
 }
 
@@ -55,4 +56,10 @@ img {
 
 .hotel-img-large {
   width: 50%;
+}
+
+@media (max-width: 767px) {
+  .hotel-img {
+    width: 90%;
+  }
 }
