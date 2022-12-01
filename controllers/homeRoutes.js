@@ -27,11 +27,20 @@ router.get('/', async (req, res) => {
     }
 });
 
-router.get('/hotel/:id', withAuth, async (req, res) => {
+router.get('/hotel/:id',  async (req, res) => {
     try {
         const hotelData = await Hotel.findByPk(req.params.id);
         const hotel = hotelData.get({ plain: true });
-        res.render('hotel', { hotel, login: req.isAuthenticated(), username: req.user.username });
+        req.isAuthenticated()
+            ? res.render('hotel', {
+                hotel,
+                login: req.isAuthenticated(),
+                username: req.user.username
+            })
+            : res.render('hotel', {
+                hotel,
+                login: req.isAuthenticated()
+            });
     } catch (err) {
         res.status(500).json(err);
     }
