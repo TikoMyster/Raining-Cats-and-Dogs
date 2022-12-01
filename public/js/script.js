@@ -8,4 +8,4 @@ const changeBg = async () => {
     } catch (err) { console.log(err); }
 };
 
-$(document).on('click', changeBg);
+$(document).contextmenu(changeBg);
