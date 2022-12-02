@@ -1,21 +1,26 @@
 # Raining Cats and Dogs
 
+![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
+![Node.js](https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white)
+![Express.js](https://img.shields.io/badge/express.js-%23404d59.svg?style=for-the-badge&logo=express&logoColor=%2361DAFB)
+![MySQL](https://img.shields.io/badge/mysql-%2300f.svg?style=for-the-badge&logo=mysql&logoColor=white)
+![Sequelize](https://img.shields.io/badge/Sequelize-52B0E7?style=for-the-badge&logo=Sequelize&logoColor=white)
+![Mocha](https://img.shields.io/badge/-mocha-%238D6748?style=for-the-badge&logo=mocha&logoColor=white)
+![Handlebars](https://img.shields.io/badge/Handlebars.js-f0772b?style=for-the-badge&logo=handlebarsdotjs&logoColor=black)
+
+
+
 ## Description
 
-Raining cats and Dogs is created to help pet owners find temporarily places for their pets to stay so that the owners can take their vacation in ease knowing that their pet will be taken care of while being away.
+Raining Cats and Dogs is created to help pet owners find temporarily places for their pets to stay so that the owners can take their vacation in ease knowing that their pet will be taken care of while being away. The app follows the MVC paradigm in its architectural structure, using Handlebars.js as the templating language, Sequelize as the ORM, and the express-session npm package for authentication.
 
 
-## Installation
+## Application Deployment
 
-What are the steps required to install your project? Provide a step-by-step description of how to get the development environment running.
+This application is a live site, deployed using Heroku at https://raining-cats-dogs.herokuapp.com/ 
 
-- Heroku
 
-## Usage
-
-Provide instructions and examples for use. Include screenshots as needed.
-
-To add a screenshot, create an `assets/images` folder in your repository and upload your screenshot to it. Then, using the relative filepath, add it to your README using the following syntax:
+## Documentation Screenshot
 
 ![Login Page Demo](assets/images/cats-and-dogs-login-demo.png)
 
@@ -26,6 +31,11 @@ To add a screenshot, create an `assets/images` folder in your repository and upl
 - Save pet information
 - Choose/reserve places for pets to stay
 - Image icon changes depending where cursor is at
+- NodeJs
+- HTML & CSS
+- JavaScript
+- Express
+- Handlebars
 
 
 
@@ -35,14 +45,15 @@ If you created an application or package and would like other developers to cont
 
 ## Credits
 
-- Christopher Saechao
-- Ruxin Qu
-- Richard Nelson
-- Lely Huynh
+- Christopher Saechao [TikoMyster](https://github.com/TikoMyster)
+- Ruxin Qu [RuxinQu](https://github.com/RuxinQu)
+- Richard Nelson [Nelson92](https://github.com/nelson92)
+- Lely Huynh [Lely2011](https://github.com/lely2011)
 
 ## License
 
 MIT License
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 Copyright (c) 2022 Christopher Saechao, Ruxin Qu, Richard Nelson, Lely Huynh
 
