@@ -1,15 +1,19 @@
 /* ----------------overall page styling---------------- */
 :root {
   --bg-hotel: #ababab;
-  --bg-img: url("https://images.dog.ceo/breeds/sheepdog-shetland/n02105855_17258.jpg");
+  --bg-img: url('/images/bg-banner.jpg');
 }
 
-html{
-  font-size: 16px;
+html {
+  font-size: 18px;
 }
 
-p {
-  font-family: Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
+body {
+
+  font-family: 'Roboto', sans-serif;
+  background-color: fffcf2;
+  color: #252422;
 }
 
 a {
@@ -24,18 +28,19 @@ a:hover {
 
 img {
   display: block;
+  border-radius: 5%;
 }
 
 /* ----------------homepage background---------------- */
 #top-banner-bg-image {
-  height: 20rem;
+  height: 50vh;
   background-image: var(--bg-img);
   background-position: center;
   background-size: cover;
 }
 
 .main-title {
-  font-size: 2.5em;
+  font-size: 4.5em;
 }
 
 /* ----------------login page styling---------------- */
@@ -44,8 +49,9 @@ img {
 }
 
 /* ----------------hotel page styling---------------- */
-.bg-hotel-card {
-  background-color:#d9d9d9 ;
+.bg-hotel-card,
+.bg-pet-card {
+  background-color: #ccc5b9;
   filter: drop-shadow(5px 5px 4px #6d6d6d);
 }
 
@@ -55,4 +61,10 @@ img {
 
 .hotel-img-large {
   width: 50%;
+}
+
+@media (max-width: 767px) {
+  .hotel-img {
+    width: 90%;
+  }
 }

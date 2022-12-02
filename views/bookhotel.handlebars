@@ -5,7 +5,7 @@
 
         <div class="form-group choose-pet">
           <label for="name">Choose a pet:</label>
-          <select name="name" id="name">
+          <select name="name" id="name" required>
             {{#each petArr}}
             <option value="{{this.name}}">{{this.name}}</option>
             {{/each}}

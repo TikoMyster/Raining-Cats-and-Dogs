@@ -20,5 +20,18 @@ router.post('/', withAuth, async (req, res) => {
     }
 });
 
+router.get('/pickup/:id', withAuth, async (req, res) => {
+    try {
+        await Pet.update({
+            hotel_id : null
+        }, {
+            where: { id: req.params.id}
+        });
+        res.redirect('/dashboard');
+    }
+    catch (err) {
+        res.status(500).send({ message: err });
+    }
+});
 
 module.exports = router;
